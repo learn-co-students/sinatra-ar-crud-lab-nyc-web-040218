@@ -20,7 +20,9 @@ your `/posts/new` route _before_ your `/posts/:id` route.
 
 ### Database
 
-First, you'll need to create the `posts` table. A blog post should have a name
+First, you'll need to create the `posts` table. A blog post should have a
+
+
 and content.
 
 Next, set up the corresponding `Post` model. Make sure the class inherits from `ActiveRecord::Base`.

@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'pry'
 
 describe "Blog Post App" do
   let(:post_name) { "Hello World" }
@@ -8,7 +9,6 @@ describe "Blog Post App" do
     @post1 = Post.create(:name => post_name, :content => post_content)
     @post2 = Post.create(:name => "second post", :content => "i'm a really good blogger")
   end
-
   describe "Create Action" do
 
     it "creates a new blog post" do
