@@ -1,0 +1,15 @@
+<h1>Blog Posts!</h1>
+<% if @posts.size > 0 %>
+  <% @posts.each do |post| %>
+    <p>
+      <h2><a href="/posts/<%= post.id %>"><%= post.name %></a></h2>
+      <%= post.content %>
+    </p>
+  <% end %>
+<% else %>
+    <h2>No posts just yet…</h2>
+    <a href="/posts/new">…so create one!</a>
+<% end %>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<a href="/posts/new">Create a new post!</a>
