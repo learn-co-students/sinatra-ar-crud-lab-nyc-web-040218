@@ -27,36 +27,36 @@ Next, set up the corresponding `Post` model. Make sure the class inherits from `
 
 ### Create
 
-Now that we have the database and model set up, it's time to set up the ability
-to create a blog post.
+<!-- Now that we have the database and model set up, it's time to set up the ability
+to create a blog post. -->
 
-First, create a route in your controller, `get '/posts/new'`, that renders the
-`new.erb` view.
+<!-- First, create a route in your controller, `get '/posts/new'`, that renders the
+`new.erb` view. -->
 
-We need to create an erb file in the views directory, `new.erb`, with a form
-that POSTs to a controller action, `/posts`. The controller action should use
-the Create CRUD action to create the blog post and save it to the database.
-When the form on `new.erb` is submitted, the action, pointing to `/posts`,
-will trigger a render of an `index.erb` file automatically. Before we can
-fully test if our form is working, we need to create that `index.erb` file, as
-our site will currently crash upon submission.
+<!-- We need to create an erb file in the views directory, `new.erb`, with a form that POSTs to a controller action, `/posts`.  -->
+
+<!-- The controller action should use the Create CRUD action to create the blog post and save it to the database.
+
+When the form on `new.erb` is submitted, the action, pointing to `/posts`, will trigger a render of an `index.erb` file automatically.
+
+Before we can fully test if our form is working, we need to create that `index.erb` file, as our site will currently crash upon submission. -->
 
 ### Read
 
-The Read CRUD action corresponds to two different controller actions: show and
+<!-- The Read CRUD action corresponds to two different controller actions: show and
 index. The show action should render the erb view `show.erb`, which shows an
 individual post. The index action should render the erb view `index.erb`, which
-shows a list of _all_ of the posts.
+shows a list of _all_ of the posts. -->
 
-Create the `get '/posts'` controller action. This action should use Active
+<!-- Create the `get '/posts'` controller action. This action should use Active
 Record to grab _all_ of the posts and store them in an instance variable,
 `@posts`. Then, it should render the `index.erb` view. That view should use erb
-to iterate over `@posts` and render them on the page.
+to iterate over `@posts` and render them on the page. -->
 
-Create the `get '/posts/:id'` controller action. This action should use Active
+<!-- Create the `get '/posts/:id'` controller action. This action should use Active
 Record to grab the post with the `id` that is in the params and set it equal to
 `@post`. Then, it should render the `show.erb` view page. That view should use
-erb to render the `@post`'s title and content.
+erb to render the `@post`'s title and content. -->
 
 ### Update
 
